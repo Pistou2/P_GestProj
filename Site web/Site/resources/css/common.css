@@ -5,37 +5,56 @@ Date: 18.11.2016
 Summary: Le meilleur des CSS
 */
 /*les couleurs de base #F781F3 et #58FA82 et #2ECCFA*/
-
-#container {
-	background-image:url(../images/BackGround01.png);
-    /*height: 1050px;*/
+*{
+    margin: 0;
+    padding:0;
+}
+body{
     height: auto;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin:0;
 }
 
+#container{
+    background-image:url(../images/BackGround01.png);
+}
+
+
 header{
-    height: 120px;
-    background-color: #2ECCFA;
     
-    margin-left: 0;
-    margin-right: 0;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    background-color: #2ECCFA;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 nav{
+    position: fixed;
     height: 80px;
+    width: 100%;
     border-style: dashed;
-    margin-top: 0;
+    margin-top: 120px;
     margin-left: 0;
     margin-right: 0;
     background-color: #2ECCFA;
 }
 section{
-    
     margin-top: 0;
     margin-left: 10%;
     margin-right: 10%;
     background-color: aliceblue;
-    height: 800px;
+    height: 970px;
+}
+
+footer{
+    position: fixed;
+    height: 10px;
+    background-color: aqua;
+}
+
+footer p
+{
+    text-align: center;
 }
