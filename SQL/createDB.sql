@@ -2,6 +2,10 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
+DROP DATABASE IF EXISTS db_MNRY;
+CREATE DATABASE db_MNRY;
+
+USE db_MNRY;
 
 #------------------------------------------------------------
 # Table: t_student
@@ -73,10 +77,10 @@ CREATE TABLE t_lesson(
 
 
 #------------------------------------------------------------
-# Table: Follow
+# Table: t_lesson_person
 #------------------------------------------------------------
 
-CREATE TABLE Follow(
+CREATE TABLE t_lesson_person(
         idPerson Int NOT NULL ,
         idLesson Int NOT NULL ,
         PRIMARY KEY (idPerson ,idLesson )
@@ -88,5 +92,5 @@ ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idStudent FOREIGN KEY (idStudent
 ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idTeacher FOREIGN KEY (idTeacher) REFERENCES t_teacher(idTeacher);
 ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idPerson FOREIGN KEY (idPerson) REFERENCES t_person(idPerson);
 ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idFormation FOREIGN KEY (idFormation) REFERENCES t_formation(idFormation);
-ALTER TABLE Follow ADD CONSTRAINT FK_Follow_idPerson FOREIGN KEY (idPerson) REFERENCES t_person(idPerson);
-ALTER TABLE Follow ADD CONSTRAINT FK_Follow_idLesson FOREIGN KEY (idLesson) REFERENCES t_lesson(idLesson);
+ALTER TABLE t_lesson_person ADD CONSTRAINT FK_t_lesson_person_idPerson FOREIGN KEY (idPerson) REFERENCES t_person(idPerson);
+ALTER TABLE t_lesson_person ADD CONSTRAINT FK_t_lesson_person_idLesson FOREIGN KEY (idLesson) REFERENCES t_lesson(idLesson);
