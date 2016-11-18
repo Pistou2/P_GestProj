@@ -4,19 +4,38 @@ Author: bouattitni balmorisa
 Date: 18.11.2016
 Summary: Le meilleur des CSS
 */
-p{
-	background-color: #F781F3;
-}
+/*les couleurs de base #F781F3 et #58FA82 et #2ECCFA*/
+
 #container {
-	background-color:#58FA82;
-	border-style : solid;
-	border-radius: 250%;
+	background-image:url(../images/BackGround01.png);
+    /*height: 1050px;*/
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
-*{
-	background-color:#2ECCFA;
+
+header{
+    height: 120px;
+    background-color: #2ECCFA;
+    
+    margin-left: 0;
+    margin-right: 0;
 }
-headers{
-	    height: 200px;
-    width: 50%;
-	border-style : solid;
+
+nav{
+    height: 80px;
+    border-style: dashed;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #2ECCFA;
+}
+section{
+    
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: aliceblue;
+    height: 800px;
 }
