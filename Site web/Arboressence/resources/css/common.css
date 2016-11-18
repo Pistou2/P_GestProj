@@ -5,5 +5,11 @@ Date: 18.11.2016
 Summary: Le meilleur des CSS
 */
 p{
-	background-color: green;
+	background-color: #F781F3;
+}
+#container {
+	background-color:#58FA82;
+}
+*{
+	background-color:#2ECCFA;
 }
