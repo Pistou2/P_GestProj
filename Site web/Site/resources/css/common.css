@@ -9,7 +9,14 @@ p{
 }
 #container {
 	background-color:#58FA82;
+	border-style : solid;
+	border-radius: 250%;
 }
 *{
 	background-color:#2ECCFA;
+}
+headers{
+	    height: 200px;
+    width: 50%;
+	border-style : solid;
 }
