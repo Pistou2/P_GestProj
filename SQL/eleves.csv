@@ -1,12 +1,13 @@
-idPerson;Nom;Prenom;Rue;Num rue;Ville;NPA;Email;Phone NB;idStudent;idTeacher
-;Pierre;Duran;;;;;;;;
-;Jean-Pierre;Dupond;;;;;;;;
-;Flavio;De Pasquale;;;;;;;;
-;Jérémie;Deleze;;;;;;;;
-;Michaël;Evesque;;;;;;;;
-;Alicia;Grandjean;;;;;;;;
-;Yoann;Huguenin;;;;;;;;
-;Alexandre;Mosca;;;;;;;;
-;Gaël;Panchaud;;;;;;;;
-;Alexander;Pantoja;;;;;;;;
-;Maxime;Grand;;;;;;;;
+idPerson;Nom;Prenom;Rue;Num rue;Ville;NPA;Email;Phone NB;NB AVS
+;Pierre;Duran;;;;;;;
+;Jean-Pierre;Dupond;;;;;;;
+;Flavio;De Pasquale;;;;;;;
+;Jérémie;Deleze;;;;;;;
+;Michaël;Evesque;;;;;;;
+;Alicia;Grandjean;;;;;;;
+;Yoann;Huguenin;;;;;;;
+;Alexandre;Mosca;;;;;;;
+;Gaël;Panchaud;;;;;;;
+;Alexander;Pantoja;;;;;;;
+;Maxime;Grand;;;;;;;
+;Toto;MNRY;;;;;;;
