@@ -14,4 +14,5 @@ id Person;Nom;Prenom;Rue;Num rue;Ville;NPA;Email;Phone NB;Profession
 ;Chexov;Vitya;;;;;;;
 ;Path;Will;;;;;;;
 ;Smith;Devid;;;;;;;
-;Price;John;;;;;;;;Toto;MNRY;;;;;;;
+;Price;John;;;;;;;
+;Toto;MNRY;;;;;;;
