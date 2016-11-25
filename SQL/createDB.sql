@@ -84,8 +84,6 @@ CREATE TABLE t_lesson_person(
         PRIMARY KEY (idPerson ,idLesson )
 )ENGINE=InnoDB;
 
-ALTER TABLE t_student ADD CONSTRAINT FK_t_student_idPerson FOREIGN KEY (idPerson) REFERENCES t_person(idPerson);
-ALTER TABLE t_teacher ADD CONSTRAINT FK_t_teacher_idPerson FOREIGN KEY (idPerson) REFERENCES t_person(idPerson);
 ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idStudent FOREIGN KEY (idStudent) REFERENCES t_student(idStudent);
 ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idTeacher FOREIGN KEY (idTeacher) REFERENCES t_teacher(idTeacher);
 ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idTeacher FOREIGN KEY (idTeacher) REFERENCES t_person(idPerson);
