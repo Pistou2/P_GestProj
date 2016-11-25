@@ -14,6 +14,6 @@ REM Utilisation : C:> lanceur
 REM				  mysql> source <fichier>.sql
 REM
 REM Placer ici le chemin correspondant au répertoire où easyphp a été installé ...
-"CHEMIN VERS VOTRE .mysql ICI" --user=MNRY --host=inf-n103-m513 --port=3306
+"CHEMIN VERS VOTRE mysql.exe ICI" --user=MNRY --password=.Etml- --host=Inf-N103-M513
 REM 
 pause
