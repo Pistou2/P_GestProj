@@ -19,13 +19,13 @@ CREATE TABLE t_student(
 
 
 #------------------------------------------------------------
-# Table: t_teacher
+# Table: t_teacherProfession
 #------------------------------------------------------------
 
-CREATE TABLE t_teacher(
-        idTeacher     int (11) Auto_increment  NOT NULL ,
-        teaProfession Varchar (25) NOT NULL ,
-        PRIMARY KEY (idTeacher )
+CREATE TABLE t_teacherProfession(
+        idTeacherProfession     int (11) Auto_increment  NOT NULL ,
+        teaProfessionName Varchar (25) NOT NULL ,
+        PRIMARY KEY (idTeacherProfession )
 )ENGINE=InnoDB;
 
 
@@ -55,7 +55,7 @@ CREATE TABLE t_person(
         perEmail     Varchar (30) ,
         perPhoneNB   Varchar (20) ,
         idStudent    Int ,
-        idTeacher    Int ,
+        idTeacherProfession    Int ,
         PRIMARY KEY (idPerson )
 )ENGINE=InnoDB;
 
@@ -68,7 +68,7 @@ CREATE TABLE t_lesson(
         idLesson    int (11) Auto_increment  NOT NULL ,
         lesDate     Date NOT NULL ,
         lesDuration Float NOT NULL ,
-        idTeacher    Int NOT NULL ,
+        idTeacherProfession    Int NOT NULL ,
         idFormation Int NOT NULL ,
         PRIMARY KEY (idLesson )
 )ENGINE=InnoDB;
@@ -85,8 +85,8 @@ CREATE TABLE t_lesson_person(
 )ENGINE=InnoDB;
 
 ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idStudent FOREIGN KEY (idStudent) REFERENCES t_student(idStudent);
-ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idTeacher FOREIGN KEY (idTeacher) REFERENCES t_teacher(idTeacher);
-ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idTeacher FOREIGN KEY (idTeacher) REFERENCES t_person(idPerson);
+ALTER TABLE t_person ADD CONSTRAINT FK_t_person_idTeacherProfession FOREIGN KEY (idTeacherProfession) REFERENCES t_teacherProfession(idTeacherProfession);
+ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idTeacherProfession FOREIGN KEY (idTeacherProfession) REFERENCES t_person(idPerson);
 ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idFormation FOREIGN KEY (idFormation) REFERENCES t_formation(idFormation);
 ALTER TABLE t_lesson_person ADD CONSTRAINT FK_t_lesson_person_idPerson FOREIGN KEY (idPerson) REFERENCES t_person(idPerson);
 ALTER TABLE t_lesson_person ADD CONSTRAINT FK_t_lesson_person_idLesson FOREIGN KEY (idLesson) REFERENCES t_lesson(idLesson);
