@@ -57,9 +57,9 @@ CREATE TABLE t_lesson(
 #------------------------------------------------------------
 
 CREATE TABLE t_lesson_person(
-        idPerson Int NOT NULL ,
         idLesson Int NOT NULL ,
-        PRIMARY KEY (idPerson ,idLesson )
+        idPerson Int NOT NULL ,
+        PRIMARY KEY (idLesson ,idPerson )
 )ENGINE=InnoDB;
 
 ALTER TABLE t_lesson ADD CONSTRAINT FK_t_lesson_idTeacher FOREIGN KEY (idTeacher) REFERENCES t_person(idPerson);

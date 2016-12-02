@@ -41,4 +41,4 @@ INTO TABLE t_lesson_person
 CHARACTER SET "latin1"
 COLUMNS TERMINATED BY ";"
 IGNORE 1 LINES
-(idPerson, idLesson);
+(idLesson, idPerson);
