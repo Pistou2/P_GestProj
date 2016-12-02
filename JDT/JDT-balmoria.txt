@@ -1,0 +1,8 @@
+02.12.2016:
+
+13:10-13:40 : Discution
+13:40-13:55 : Daily scrum
+13:55-14:45 : Modification sur le site web (recherche d'un site de création de bouton = echec)
+15:00-15:35 : Création d'un nouveau background pour le site (le background se répete de haut en bas)
+15:35-16:05 : Application du nouvreau background sur le site + travail sur le footer + problème avec Git
+16:05-16:15 : Realiation du JDT
