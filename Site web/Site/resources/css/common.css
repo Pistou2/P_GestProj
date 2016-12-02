@@ -1,6 +1,6 @@
 /*
 ETML
-Author: bouattitni balmorisa
+Author: bouattitni balmorisa et moi
 Date: 18.11.2016
 Summary: Le meilleur des CSS
 */
@@ -17,6 +17,7 @@ body{
 
 #container{
     background-image:url(../images/BackGround01.png);
+	background-position :fixed;
 }
 
 
@@ -53,7 +54,6 @@ nav{
 }
 	
 section{
-	overflow:scroll;
 	/*passe l'élement au troisième plan */
 	z-index: 2;
 	
@@ -72,12 +72,12 @@ section{
 }
 
 footer{
-	position: absolute; 
+	position: fixed; 
 	bottom: 0; 
 	left: 0; 
 	right: 0;
     height: 50px;
-    background-color: aqua;
+    background-color: #58FA82;
 }
 
 footer p
