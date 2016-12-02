@@ -9,3 +9,14 @@ COLUMNS TERMINATED BY ";"
 IGNORE 1 LINES
 (@useless, perFirstName, perLastNAme, perStreet, perStreetNB, perCity, perNPA, perEmail, perPhoneNB, perStudentAVS, perTeacherProfession)
 SET idPerson = NULL;
+
+
+SELECT "" AS "Loading t_formation with formation.csv";
+
+LOAD DATA INFILE "F:/PROJETS/P_GestProj/Git/SQL/formation.csv"
+INTO TABLE t_person
+CHARACTER SET "latin1"
+COLUMNS TERMINATED BY ";"
+IGNORE 1 LINES
+(@useless, forTitle)
+SET idFormation = NULL;
