@@ -13,7 +13,7 @@ USE db_MNRY;
 
 CREATE TABLE t_formation(
         idFormation int (11) Auto_increment  NOT NULL ,
-        forTitle    Varchar (25) NOT NULL ,
+        forTitle    Varchar (42) NOT NULL ,
         PRIMARY KEY (idFormation )
 )ENGINE=InnoDB;
 
