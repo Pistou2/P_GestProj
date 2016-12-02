@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <title>Test PHP</title>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+ <p>Bonjour le monde</p>
+ php.php
+ <?php
+try {
+    $dbh = new PDO('mysql:host=localhost;dbname=db_mnry', 'root', '');
+    foreach($dbh->query('SELECT perFirstName, perLastName, perCity from t_person') as $row) {
+        //print_r($row);
+		print $row['perFirstName'] . "\t";
+		print $row['perLastName'] . "\t";
+		print $row['perCity'] . "\n\n";
+    }
+    $dbh = null;
+} catch (PDOException $e) {
+    print "Erreur !: " . $e->getMessage() . "<br/>";
+    die();
+}
+//fermer la connexion
+$dbh = null;
+?>
+ </body>
+</html>
