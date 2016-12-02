@@ -25,11 +25,9 @@ Summary:
 			<?php
 				try {
 					$dbh = new PDO('mysql:host=localhost;dbname=db_mnry', 'root', '');
-					foreach($dbh->query('SELECT perFirstName, perLastName, perCity from t_person') as $row) {
+					foreach($dbh->query('SELECT forTitle from t_formation') as $row) {
 						//print_r($row);
-						print $row['perFirstName'] . "\t";
-						print $row['perLastName'] . "\t";
-						print $row['perCity'] . "\n\n";
+						print $row['forTitle'] . "<br/>";
 					}
 					$dbh = null;
 				} catch (PDOException $e) {
@@ -39,6 +37,7 @@ Summary:
 				//fermer la connexion
 				$dbh = null;
 			?>
+			
 			<p>PHP stop</p>
 				<table>
 				
