@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+ETML
+Author: 
+Date: 
+Summary: 
+-->
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link href="resources/css/common.css" rel="Stylesheet" type="text/css">
+		<title></title>
+	</head>
+	<body>
+        
+		<div id="container">
+			<header>
+				<p>LOGO</p>
+			</header>
+			<nav>  
+            </nav>
+			<section>
+			<p>PHP</p>
+			
+			<?php
+			
+			print("hello world" );
+			
+				$link = mysql_connect("localhost", "root", "")
+					or die("Impossible de se connecter : " . mysql_error());
+				print( 'Connexion réussie');
+				mysql_close($link);
+			?>
+
+				<table>
+				
+					<tr>
+						<td><p>test</p></td>
+						<td><p>test</p></td>
+						<td><p>test</p></td>
+						<td><p>test</p></td>
+						<td><p>test</p></td>
+					</tr>
+					
+				</table>
+			</section>
+			<footer>
+                <p>copyright</p>
+			</footer>
+		</div>
+	</body>
+</html>
