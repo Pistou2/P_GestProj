@@ -53,12 +53,12 @@ nav{
 
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-li {
+nav ul li {
     display: inline;
 }
 	
