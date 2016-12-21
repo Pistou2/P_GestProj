@@ -52,7 +52,7 @@ CREATE TABLE t_person(
         perStreetNB  Varchar (5) NOT NULL ,
         perCity      Varchar (20) NOT NULL ,
         perNPA       Varchar (5) NOT NULL ,
-        perEmail     Varchar (30) ,
+        perEmail     Varchar (50) ,
         perPhoneNB   Varchar (20) ,
         idStudent    Int ,
         idTeacherProfession    Int ,
